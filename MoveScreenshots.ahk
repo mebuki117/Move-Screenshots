@@ -15,7 +15,7 @@ SSMove(){
         MCSSDir = %SelectMCDir%\.minecraft\screenshots\*.png
         Loop, %MCSSDir%{
             Filename = %A_LoopFileName%
-            FileMove, %MCSSDir%, %screenshotsDir%\Instance%inst% -%Filename%
+            FileMove, %MCSSDir%, %screenshotsDir%\Instance %inst%-%Filename%
         }
     }
 }
